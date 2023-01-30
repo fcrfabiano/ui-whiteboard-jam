@@ -1,9 +1,12 @@
+import ReactFlow from 'reactflow';
+import 'reactflow/dist/style.css';
+
 function App() {
   return (
-    <div className="App">
-     a
-    </div>
-  )
+    <h1>
+      a
+    </h1>
+  );
 }
 
-export default App
+export default App;
