@@ -24,7 +24,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <p>
 <h2 align="center" id="como-rodar">Como Rodar</h2>
 <div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate" style="position: relative;"><code>Clone este repositório
-  $ git clone <git@github.com:fcrfabiano/ui-whiteboard-jam.git>
+ $ git clone <git@github.com:fcrfabiano/ui-whiteboard-jam.git>
 
   Acesse a pasta do projeto no terminal/cmd
   $ cd ui-whiteboard-jam
