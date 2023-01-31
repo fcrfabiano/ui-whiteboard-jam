@@ -46,4 +46,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 </svg>
     </clipboard-copy>
   </div></div>
+  <h1 align="center">
+  <img src="./whiteboard1.png" />
+  <img src="./whiteboard2.png" />
+</h1>
 <h2 align="center" id="autor">Criado com ❤️ por Fabiano</h2>
