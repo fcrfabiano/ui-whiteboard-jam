@@ -41,9 +41,7 @@ const INITIAL_NODES = [
       x: 1000,
       y: 400,
     },
-    data: {
-      label: 'Hello',
-    },
+    data: {},
   },
 ] satisfies Node[];
 
@@ -54,6 +52,18 @@ function App() {
   const onConnect = useCallback((connection: Connection) => {
     return setEdges((prevEdges) => addEdge(connection, prevEdges));
   }, []);
+
+  function addSquareNode() {
+    setNodes((prevNodes) => [...prevNodes, {
+      id: crypto.randomUUID(),
+      type: 'square',
+      position: {
+        x: 750,
+        y: 350,
+      },
+      data: {},
+    }]);
+  }
 
   return (
     <div className="w-screen h-screen">
@@ -75,9 +85,10 @@ function App() {
       </ReactFlow>
 
       <Toolbar.Root className="fixed bottom-20 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-lg border border-zinc-300 px-8 h-20 w-96 overflow-hidden">
-        <Toolbar.Button>
-
-        </Toolbar.Button>
+        <Toolbar.Button
+          onClick={ addSquareNode }
+          className="w-32 h-32 bg-violet-500 mt-6 rounded transition-transform hover:-translate-y-2"
+        />
       </Toolbar.Root>
     </div>
   );
